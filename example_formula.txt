@@ -1,0 +1,51 @@
+((~(a&b) <=> u0) & (~(b&c) <=> u1) & ((c&a) <=> u2) & (~(k1a+u0) <=> u5) & ((k2a + u1) <=> u4) & (~(k3a+u2) <=> u3) & (~(u5&u4) <=> u6) &
+(y <=> (u6 | u3)))
+&
+((~(a&b) <=> w0) & (~(b&c) <=> w1) & ((c&a) <=> w2) & (~(k1b+w0) <=> w5) & ((k2b + w1) <=> w4) & (~(k3b+w2) <=> w3) & (~(u5&w4) <=> w6) &
+(yx <=> (w6 | w3)))
+&
+(y + yx) &
+
+
+(
+((~(aa&bb) <=> uu0) & (~(bb&cc) <=> uu1) & ((cc&aa) <=> uu2) & (~(k1a+uu0) <=> uu5) & ((k2a + uu1) <=> uu4) & (~(k3a+uu2) <=> uu3) & (~(uu5&uu4) <=> uu6) &
+(yy <=> (uu6 | uu3)))
+&
+((~(aa&bb) <=> ww0) & (~(bb&cc) <=> ww1) & ((cc&aa) <=> ww2) & (~(k1b+ww0) <=> ww5) & ((k2b + ww1) <=> ww4) & (~(k3b+ww2) <=> ww3) & (~(uu5&ww4) <=> ww6) &
+(yy <=> (ww6 | ww3)))
+&
+(aa &
+~bb &
+cc & 
+yy )
+)
+
+&
+
+(
+((~(aaa&bbb) <=> uuu0) & (~(bbb&ccc) <=> uuu1) & ((ccc&aaa) <=> uuu2) & (~(k1a+uuu0) <=> uuu5) & ((k2a + uuu1) <=> uuu4) & (~(k3a+uuu2) <=> uuu3) & (~(uuu5&uuu4) <=> uuu6) &
+(yyy <=> (uuu6 | uuu3)))
+&
+((~(aaa&bbb) <=> www0) & (~(bbb&ccc) <=> www1) & ((ccc&aaa) <=> www2) & (~(k1b+www0) <=> www5) & ((k2b + www1) <=> www4) & (~(k3b+www2) <=> www3) & (~(uuu5&www4) <=> www6) &
+(yyy <=> (www6 | www3)))
+&
+(~aaa &
+bbb &
+ccc & 
+yyy )
+)
+
+&
+
+(
+((~(aaaa&bbbb) <=> uuuu0) & (~(bbbb&cccc) <=> uuuu1) & ((cccc&aaaa) <=> uuuu2) & (~(k1a+uuuu0) <=> uuuu5) & ((k2a + uuuu1) <=> uuuu4) & (~(k3a+uuuu2) <=> uuuu3) & (~(uuuu5&uuuu4) <=> uuuu6) &
+(yyyy <=> (uuuu6 | uuuu3)))
+&
+((~(aaaa&bbbb) <=> wwww0) & (~(bbbb&cccc) <=> wwww1) & ((cccc&aaaa) <=> wwww2) & (~(k1b+wwww0) <=> wwww5) & ((k2b + wwww1) <=> wwww4) & (~(k3b+wwww2) <=> wwww3) & (~(uuuu5&wwww4) <=> wwww6) &
+(yyyy <=> (wwww6 | wwww3)))
+&
+(~aaaa &
+bbbb &
+~cccc & 
+~yyyy )
+)
